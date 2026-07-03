@@ -1,173 +1,114 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
+    <title>Gallery | MDA Polytechnic</title>
+    <link rel="icon" href="logo.png" type="image/png">
     <link rel="stylesheet" href="gallery.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="icon" href="logo.png" type="image/png">
-
 </head>
 
-<body style="background-image: url(photo2.png); "></body>
-
-<header>
-    <span class="logo">
-        <img src="logo.png" height="50px" width="50px">
-        <h1 style="align-self: center;">MDA Polytechnic</h1>
-    </span>
-
-    <nav id="nav">
-        <a href="index.html">Home</a>
-        <a href="#">About</a>
-        <a href="#">Courses</a>
-        <a href="#">Facilities</a>
-        <a href="#">Gallery</a>
-        <a href="#">Contact</a>
-    </nav>
-
-    <div class="menu-btn" onclick="toggleMenu()">
-        <i class="fas fa-bars"></i>
-    </div>
-</header>
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-<section class="gallery-section">
-
-    <div class="gallery-heading blur">
-        <span>Campus Life</span>
-        <h2>Moments & Memories</h2>
-        <p>
-            Explore photos from college events, annual gatherings,
-            sports activities and placement drives.
-        </p>
-    </div>
-
-    <!-- Filter Buttons -->
-    <div class="gallery-tabs">
-        <button class="Active" type="button" onclick="window.location.href='gallery.html'">Gallary</button>
-       <button type="button" onclick="window.location.href='gallery.html'">Gathering</button>
-     <button type="button" onclick="window.location.href='sport.html'">Sport</button>
-    </div>
-
-    <!-- Gallery Grid -->
-    <div class="gallery-grid">
-
-        <div class="gallery-card">
-            <img src="mda1.png" alt="">
-            <div class="overlay">
-                <!-- <h4>Annual Gathering</h4> -->
+<body>
+    <header>
+        <span class="logo">
+            <img src="logo.png" alt="MDA logo">
+            <div>
+                <h1>MDA Polytechnic</h1>
+                <p>College of Engineering</p>
             </div>
+        </span>
+
+        <nav id="nav">
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Courses</a>
+            <a href="#">Facilities</a>
+            <a class="active" href="gallery.html">Gallery</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <div class="menu-btn" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main class="page-hero">
+        <div class="hero-content">
+            <span>Our Gallery</span>
+            <h1>Campus Moments & Celebrations</h1>
+            <p>Discover student activities, campus events, and memorable college experiences.</p>
+        </div>
+    </main>
+
+    <section class="gallery-section">
+        <div class="gallery-heading">
+            <span>Campus Life</span>
+            <h2>Moments & Memories</h2>
+            <p>Explore photos from college events, academic achievements, cultural programs, and campus celebrations.</p>
         </div>
 
-        <div class="gallery-card">
-            <img src="mda2.png" alt="">
-            <div class="overlay">
-                <!-- <h4>Sports Event</h4> -->
-            </div>
+        <div class="gallery-tabs">
+            <a class="tab active" href="gallery.html">Gallery</a>
+            <a class="tab" href="Gathering.html">Gathering</a>
+            <a class="tab" href="sport.html">Sport</a>
         </div>
 
-        <div class="gallery-card">
-            <img src="mda3.png" alt="">
-            <div class="overlay">
-                <!-- <h4>Job Expo</h4> -->
-            </div>
+        <div class="gallery-grid">
+            <article class="gallery-card">
+                <img src="mda1.png" alt="Students in a group activity">
+                <div class="overlay"><h4>Group Workshop</h4></div>
+            </article>
+            <article class="gallery-card">
+                <img src="mda2.png" alt="Campus cultural event">
+                <div class="overlay"><h4>Cultural Evening</h4></div>
+            </article>
+            <article class="gallery-card">
+                <img src="mda3.png" alt="College seminar">
+                <div class="overlay"><h4>Guest Lecture</h4></div>
+            </article>
+            <article class="gallery-card">
+                <img src="mda4.png" alt="Laboratory session">
+                <div class="overlay"><h4>Lab Learning</h4></div>
+            </article>
+            <article class="gallery-card">
+                <img src="mda5.png" alt="Placement interaction">
+                <div class="overlay"><h4>Placement Drive</h4></div>
+            </article>
+            <article class="gallery-card">
+                <img src="mda6.png" alt="Student workshop">
+                <div class="overlay"><h4>Skill Session</h4></div>
+            </article>
+            <article class="gallery-card">
+                <img src="mda7.png" alt="Campus tour">
+                <div class="overlay"><h4>Campus Tour</h4></div>
+            </article>
+            <article class="gallery-card">
+                <img src="mda8.png" alt="Students studying outdoors">
+                <div class="overlay"><h4>Study Circle</h4></div>
+            </article>
+            <article class="gallery-card">
+                <img src="mda9.png" alt="Student presentation">
+                <div class="overlay"><h4>Project Demo</h4></div>
+            </article>
+            <article class="gallery-card">
+                <img src="mda10.png" alt="College fest">
+                <div class="overlay"><h4>Festival Fun</h4></div>
+            </article>
+            <article class="gallery-card">
+                <img src="mda11.png" alt="Workshop session">
+                <div class="overlay"><h4>Technical Workshop</h4></div>
+            </article>
+            <article class="gallery-card">
+                <img src="mda12.png" alt="Faculty and students">
+                <div class="overlay"><h4>Faculty Interaction</h4></div>
+            </article>
         </div>
+    </section>
 
-        <div class="gallery-card">
-            <img src="mda4.png" alt="">
-            <div class="overlay">
-                <!-- <h4>Cultural Program</h4> -->
-            </div>
-        </div>
-
-        <div class="gallery-card">
-            <img src="mda5.png" alt="">
-            <div class="overlay">
-                <!-- <h4>Seminar</h4> -->
-            </div>
-        </div>
-
-        <div class="gallery-card">
-            <img src="mda6.png" alt="">
-            <div class="overlay">
-                <!-- <h4>Workshop</h4> -->
-            </div>
-        </div>
-
-        <div class="gallery-card">
-            <img src="mda7.png" alt="">
-            <div class="overlay">
-                <!-- <h4>Campus Tour</h4> -->
-            </div>
-        </div>
-
-        <div class="gallery-card">
-            <img src="mda8.png" alt="">
-            <div class="overlay">
-                <!-- <h4>Placement Drive</h4> -->
-            </div>
-        </div>
-        <div class="gallery-card">
-            <img src="mda9.png" alt="">
-            <div class="overlay">
-                <!-- <h4>Placement Drive</h4> -->
-            </div>
-        </div>
-        <div class="gallery-card">
-            <img src="mda10.png" alt="">
-            <div class="overlay">
-                <!-- <h4>Placement Drive</h4> -->
-            </div>
-        </div>
-        <div class="gallery-card">
-            <img src="mda11.png" alt="">
-            <div class="overlay">
-                <!-- <h4>Placement Drive</h4> -->
-            </div>
-        </div>
-        <div class="gallery-card">
-            <img src="mda2.png" alt="">
-            <div class="overlay">
-                <!-- <h4>Placement Drive</h4> -->
-            </div>
-        </div>
-        <div class="gallery-card">
-            <img src="mda13.png" alt="">
-            <div class="overlay">
-                <!-- <h4>Placement Drive</h4> -->
-            </div>
-        </div>
-        <div class="gallery-card">
-            <img src="mda12.png" alt="">
-            <div class="overlay">
-                <!-- <h4>Placement Drive</h4> -->
-            </div>
-        </div>
-        <div class="gallery-card">
-            <img src="mda15.png" alt="">
-            <div class="overlay">
-                <!-- <h4>Placement Drive</h4> -->
-            </div>
-        </div>
-        <div class="gallery-card">
-            <img src="mda14.png" alt="">
-            <div class="overlay">
-                <!-- <h4>Placement Drive</h4> -->
-            </div>
-        </div>
-
-
-    </div>
-
-</section>
-
-
-<!-- footer section -->
-   <footer class="footer">
+    <footer class="footer">
         <div class="footer-container">
             <div class="footer-about">
                 <div class="footer-logo">
@@ -177,10 +118,7 @@
                         <span>Kolpa, Latur</span>
                     </div>
                 </div>
-                <p>
-                    AICTE Approved | Affiliated Maharashtra State Board of Technical Educatio (MSBTE). Committed to excellence
-                    in technical education and innovation.
-                </p>
+                <p>AICTE approved institution committed to quality technical education, innovation, and student success.</p>
                 <div class="footer-badges">
                     <span>AICTE Approved</span>
                     <span>DTE : 2285</span>
@@ -198,44 +136,22 @@
                     <li><a href="gallery.html">Gallery</a></li>
                 </ul>
             </div>
-            <!-- <div class="footer-links">
-                <h4>Compliance</h4>
-                <ul>
-                    <li><a href="#">Committees</a></li>
-                    <li><a href="#">Mandatory Disclosure</a></li>
-                    <li><a href="#">Infrastructure</a></li>
-                    <li><a href="#">Students</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div> -->
             <div class="footer-contact">
                 <h4>Contact Us</h4>
-                <p>
-                    <i class="fas fa-location-dot"></i>
-                    MDA College of Engineering, Kolpa, Latur
-                </p>
-                <p>
-                    <i class="fas fa-phone"></i>
-                    +91 1234567890
-                </p>
-                <p style="display: flex;">
-                    <i class="fas fa-envelope"></i>
-                    mdacollege@gmail.com
-                </p>
-                <p style="display: flex;">
-                    <i class="fas fa-building-columns"></i>
-                    Affiliated to MSBTE
-                </p>
-                <p>
-                    <i class="fab fa-instagram"></i>
-                    Follow us on Instagram
-                </p>
+                <p><i class="fas fa-location-dot"></i> MDA College of Engineering, Kolpa, Latur</p>
+                <p><i class="fas fa-phone"></i> +91 1234567890</p>
+                <p><i class="fas fa-envelope"></i> mdacollege@gmail.com</p>
+                <p><i class="fas fa-building-columns"></i> Affiliated to MSBTE</p>
+                <p><i class="fab fa-instagram"></i> Follow us on Instagram</p>
             </div>
         </div>
         <div class="footer-bottom">
             <p>© 2026 MDA College of Engineering, Kolpa. All Rights Reserved.</p>
+        </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
