@@ -15,7 +15,7 @@ body::before {
     content: '';
     position: fixed;
     inset: 0;
-    background: rgba(5, 18, 44, 0.45);
+    /* background: rgba(5, 18, 44, 0.45); */
     pointer-events: none;
     z-index: -1;
 }
