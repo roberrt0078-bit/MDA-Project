@@ -188,7 +188,8 @@ iframe{
     /* border: 4px solid rgba(0,33,71,0.9);  */
     border-radius: 20px;
     margin-top: 15px;
-    margin-left: 70px;
+    display: block;
+    margin:0 auto;
     margin-bottom: 20px;
 }
 
