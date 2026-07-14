@@ -108,7 +108,7 @@ nav a::after {
 .page-hero {
     padding: 100px 8% 70px;
     text-align: center;
-    background: linear-gradient(180deg, rgba(3, 37, 79, .72), rgba(3, 37, 79, .32));
+    /* background: linear-gradient(180deg, rgba(3, 37, 79, .72), rgba(3, 37, 79, .32)); */
 }
 
 .hero-content {
