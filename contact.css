@@ -3,6 +3,7 @@
     margin: 0;
 }
 body{
+    
     margin:0;
     font-family:'Poppins',sans-serif;
     background:url(photo2.png) center/cover fixed;
@@ -156,7 +157,9 @@ nav a:hover{
 .contact-box{
     flex:1;
     padding:10px;
+    
 }
+
 
  .contact-box:not(:last-child){
     border-right:2px solid rgba(0,33,71,0.9);
@@ -188,7 +191,8 @@ iframe{
     /* border: 4px solid rgba(0,33,71,0.9);  */
     border-radius: 20px;
     margin-top: 15px;
-    margin-left: 70px;
+    display: block;
+    margin:0 auto;
     margin-bottom: 20px;
 }
 
