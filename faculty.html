@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDA Faculty Directory</title>
+    <link rel="stylesheet" href="faculty.css">
+</head>
+<body>
+
+    <!-- Header & Search Section -->
+    <header>
+        <h4>MEET THE TEAM</h4>
+        <h1>Exprienced & Dedicated Faculty</h1>
+        <p>Find and connect with our world-class educators and researchers.</p>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search by name or department..." onkeyup="filterFaculty()">
+        </div>
+    </header>
+
+    <!-- Faculty Grid Container -->
+    <main class="faculty-container">
+        
+        <!-- Faculty Card 1 -->
+        <div class="faculty-card" data-dept="Computer Science">
+            <img src="professor.png" alt="Faculty Photo" class="faculty-img">
+            <h2 class="faculty-name">sasane</h2>
+            <p class="faculty-title">Professor & HOD</p>
+            <p class="faculty-dept">Department of Computer Science</p>
+            <p class="faculty-email">mda3@gmail.com</p>
+            <button class="view-btn" onclick="toggleDetails(this)">View Profile</button>
+            <div class="extra-details">
+                <p><strong>Research:</strong> Artificial Intelligence, Cryptography</p>
+                <p><strong>Office:</strong> Turing Hall, Room 404</p>
+            </div>
+        </div>
+
+        <!-- Faculty Card 2 -->
+        <div class="faculty-card" data-dept="Mathematics">
+            <img src="tecaher.jpg" alt="Faculty Photo" class="faculty-img">
+            <h2 class="faculty-name">swati muthe</h2>
+            <p class="faculty-title">Associate Professor</p>
+            <p class="faculty-dept">Department of Mathematics</p>
+            <p class="faculty-email">Mda3@gmail.com</p>
+            <button class="view-btn" onclick="toggleDetails(this)">View Profile</button>
+            <div class="extra-details">
+                <p><strong>Research:</strong> Computational Theory, Analytical Engines</p>
+                <p><strong>Office:</strong> Science Center, Room 101</p>
+            </div>
+        </div>
+
+        <!-- Faculty Card 3 -->
+        <div class="faculty-card" data-dept="Physics">
+            <img src="professor.png" alt="Faculty Photo" class="faculty-img">
+            <h2 class="faculty-name">no name</h2>
+            <p class="faculty-title">Lead Researcher</p>
+            <p class="faculty-dept">Department of Physics</p>
+            <p class="faculty-email">mda3@gmail.com</p>
+            <button class="view-btn" onclick="toggleDetails(this)">View Profile</button>
+            <div class="extra-details">
+                <p><strong>Research:</strong> Relativity, Quantum Mechanics</p>
+                <p><strong>Office:</strong> Newton Labs, Room 302</p>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
