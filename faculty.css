@@ -1,0 +1,132 @@
+/* General Layout Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background:url(1.jpeg) center/cover fixed;
+    backdrop-filter:blur(15px);
+    color: #333;
+    padding-bottom: 50px;
+}
+
+header {
+    background:url(1.jpeg) center/cover fixed;
+    color:darkblue;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Search Bar Styling */
+.search-container {
+    margin-top: 20px;
+}
+
+#searchInput {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Faculty Grid Layout */
+.faculty-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Faculty Profile Card Styling */
+.faculty-card {
+    background: transparent;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faculty-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.faculty-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #efdfbb;
+}
+
+.faculty-name {
+    font-size: 1.3rem;
+    color: #0b3c5d;
+    margin-bottom: 5px;
+}
+
+.faculty-title {
+    font-weight: 600;
+    color: #b8860b;
+    font-size: 0.95rem;
+}
+
+.faculty-dept {
+    font-size: 0.9rem;
+    color: #5b1024;
+    margin: 5px 0 15px 0;
+}
+
+.faculty-email {
+    font-size: 0.85rem;
+    color: #328cc1;
+    margin-bottom: 15px;
+}
+
+/* Dynamic Interactive Buttons */
+.view-btn {
+    background-color: #328cc1;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+
+.view-btn:hover {
+    background-color: #0b3c5d;
+}
+
+/* Accordion Component Style */
+.extra-details {
+    display: none;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    text-align: left;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
