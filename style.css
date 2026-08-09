@@ -164,6 +164,51 @@ section h2 {
     box-shadow: 0 15px 30px rgba(0, 0, 0, .4);
 }
 
+/* faculty cards */
+ .teacher-card{
+    width:250px;
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(10px);
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+     animation: slideDown 1.5s ease;
+    transition: .5s;
+}
+
+.teacher-card img{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:10px;
+}
+
+.teacher-card h3{
+    margin:5px 0;
+}
+
+.subject{
+    color:#2563eb;
+    margin-bottom:12px;
+}
+
+.teacher-card p{
+    margin:8px 0;
+    font-size:14px;
+}
+
+.teacher-card i{
+    color:#2563eb;
+    margin-right:6px;
+}
+
+.teacher-card:hover{
+   
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .4);
+}
+
 /* Stats */
 .stats {
     display: flex;
@@ -411,6 +456,7 @@ section h2 {
     .logo h1 {
         font-size: 22px;
     }
+
 
     nav {
         display: none;
